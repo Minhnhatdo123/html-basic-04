@@ -120,7 +120,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*==== Hero ===== */
 .hero{
-    padding: 100px 0 169px;
+    padding: 100px 0 77px;
 }
 
 .hero__inner
@@ -128,11 +128,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 121px;
 }
 
 .hero-media{
    display: flex;
    position: relative;
+   padding-bottom: 94px;
 }
 
 
@@ -148,6 +150,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: #FE997B;
     border: 3px solid #FFF;
     vertical-align: bottom;
+}
+
+.hero__img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
 }
 
 .hero__decor{
@@ -179,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .hero-list{
     position: absolute;
     left: 129px;
-    bottom: -92px;
+    bottom: 0;
     width: 250px;
     height: 156px;
     padding: 18px 14px;
@@ -199,6 +207,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: 40px;
     border-radius: 10px;
     background: #FEC23F;
+    object-fit: cover;
 }
 
 
@@ -211,6 +220,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 10px;
 }
 
+.hero__item-name{
+    color: #181E52;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
 .hero__item-skeleton{
     width: 118px;
     height: 4px;
@@ -220,6 +236,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: 7px;
 }
 
+.hero__item-skeleton:last-child{
+    width: 39px;
+}
+
 .hero__item-separator{
     width: 100%;
     background: #F2F2F2;
@@ -227,10 +247,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 20px 0;
 }
 
-
-.hero__item-skeleton:last-child{
-    width: 39px;
-}
 
 /* === hero-content ====== */
 .hero__content
@@ -250,7 +266,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: 24px;
     color: #656689;
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 1.87; /* 187.5% */
 }
 
@@ -265,6 +280,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     align-items: center;
     justify-content: center;
     min-width: 189px;
+    font-size: 1.6rem;
     background: var(--primary-color);
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
@@ -287,7 +303,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #000958;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 0.16; /* 100% */
+    line-height: 1; /* 100% */
     text-decoration-line: underline;
 }
 
