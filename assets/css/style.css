@@ -1249,11 +1249,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .blog__top--right{
+    width:350px;
     margin-right: 73px;
 }
 
 .blog__top--des{
-    max-width:350px;
     color: #656689;
     font-size: 1.6rem;
     font-weight: 400;
@@ -1314,7 +1314,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .blog__item--content{
-    margin-top: 28px;
+    padding: 28px 2px 0 0;
 }
 
 .blog__item--title{
