@@ -1337,7 +1337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer{
    margin-top: 51px;
    padding-top: 52px;
-   background: linear-gradient(to right, #fff6ed 43%, transparent 42%);
+   background: linear-gradient(to right, #fff6ed 42%, #FFFAF5 42%);
 }
 
 .footer__inner{
@@ -1345,6 +1345,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .footer__left{
+    flex: 1;
     width: 42%;
     padding: 62px 0 148px;
 }
@@ -1358,9 +1359,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 34px 0 68px;
     border-radius: 23px;
     border: 1px solid rgba(255, 91, 46, 0.25);
-    opacity: 0.6;
     background: #FFF;   
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .footer__subscribe--email{
@@ -1371,8 +1371,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-weight: 300;
 }
 
+.footer__subscribe--email::placeholder{
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16; /* 116.667% */
+}
 
-.footer__btn--control{
+.footer__subscribe--submit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1382,6 +1388,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-radius: 50%;
     background: var(--primary-color);
     color: #fff;
+    margin-right: -1px;
+}
+
+.footer__subscribe--submit:hover{
+    opacity: 0.8    ;
+    cursor: pointer;
 }
 
 
@@ -1415,6 +1427,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0.7;
 }
 
+/* Footer-right ===== */
 .footer__row{
     display: grid;
     grid-template-columns: repeat(2,1fr);
